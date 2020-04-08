@@ -1,0 +1,20 @@
+public class Magazine extends Reading
+{
+    //Instansiate variables
+    private boolean isTrending;
+    
+    //Constructor
+    public Magazine(String author, String publisher, String title, int pages, boolean isTrending)
+    {
+        super(author, publisher, title, pages);
+        this.isTrending = isTrending;
+    }//end of constructor
+    
+    //Brain Methods
+    public String toString()
+    {
+        String output = super.toString();
+        output += "\nIs it trending?: "+ isTrending;
+        return output;
+    }//end of toString  
+}//end of class
