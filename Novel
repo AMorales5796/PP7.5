@@ -1,0 +1,22 @@
+public class Novel extends Reading
+{
+    private int numChapters;
+    private boolean isFictional;
+
+    //Constructers
+    public Novel(String author, String publisher, String title, int pages, int numChapters, boolean isFictional)
+    {
+        super(author, publisher, title, pages); //from Reading class
+        this.numChapters = numChapters;
+        this.isFictional = isFictional;
+    }//end of default constructor
+    
+    //Brain Methods
+    public String toString()
+    {
+        String output = super.toString();
+        output += "\nAmounts of chapters: " + numChapters;
+        output += "\nIs it fictional?: " + isFictional;
+        return output;
+    }//end of toString
+}//end of class
